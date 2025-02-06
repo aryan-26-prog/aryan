@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NMAK</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    font-size: large;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background-color: #0b0f3f;
+    color: #333;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color:#fff;
+    text-decoration: none;
+}
+
+header .auth-buttons button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color:  #dac90d;
+    color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+section div h1 {
+    color: #333;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+section div p{
+    color: #333;
+}
+
+.services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    width: 22%;
+    margin: 10px 0;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.about, .testimonials, .contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h2, .testimonials h2, .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.testimonial-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial-item {
+    width: 45%;
+    margin: 10px 0;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact form button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer .footer-section {
+    width: 30%;
+    margin: 10px 0;
+}
+
+footer .footer-section h3 {
+    margin-bottom: 10px;
+}
+
+footer .footer-section ul {
+    list-style: none;
+}
+
+footer .footer-section ul li {
+    margin: 5px 0;
+}
+
+footer .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+}
+    </style>
+    <!-- Header Section -->
+    <header>
+        
+        
+        <div class="logo">
+            <img src="../Downloads/logo imp utk.png" alt="Nmak Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="Register_User.html"><button>Login</button></a>
+            <button>Sign Up</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>NMAK</h1>
+            <p>No More Andha Kanoon</p>
+
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <h3>Civil</h3>
+                <p>We are handle non-Criminal legal desputes between individuals.</p>
+            </div>
+            <div class="service-item">
+                <h3>Criminal</h3>
+                <p>We are handle the defend individuals or entities accused of criminal offenses .</p>
+            </div>
+            <div class="service-item">
+                <h3>Corporate</h3>
+                <p>We focus on legal matters related to businesses and corporations.</p>
+            </div>
+            <div class="service-item">
+                <h3>Real estate</h3>
+                <p>We handle legal matters related to property, including transaction,disputes and zoning issues.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Welcome to *Nmak*, the revolutionary app designed by a dedicated law faculty to bridge the gap between legal expertise and the people who need it most. At Nmak, we believe that access to legal knowledge and guidance should be simple, accessible, and empowering for everyone. Whether you’re a student, a professional, or someone seeking legal clarity, Nmak is here to transform the way you interact with the law..</p>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-list">
+            <div class="testimonial-item">
+                <p>"**"Nmak is hands down the best legal app I’ve ever used! It’s like having a team of lawyers in my pocket. The resources are top-notch, the interface is so easy to use, and the expert advice feature is a lifesaver.."</p>
+                <span>- Utkarsh shukla</span>
+            </div>
+            <div class="testimonial-item">
+                <p>"I’m blown away by how much Nmak has helped me. From drafting legal documents to understanding complex laws, this app has been my go-to guide."</p>
+                <span>- Avinash Sharma</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: info@Nmak.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Nmak. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
